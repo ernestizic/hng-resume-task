@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
-    font-family: EB Garamond;
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+    line-height: 24px;
 }
 header.head{
     padding: 50px;
     height: 100px;
-    background-color:#866450;
+    background-color:black;
 }
 header.head img{
     border-radius: 50%;
-    width: 18%;
+    width: 250px;
+    height: 250px;
     margin-top: 23px;
     display: block;
     margin-left: auto;
@@ -21,10 +24,9 @@ header.head img{
 .sub-head{
     text-align: center;
     color: #0a192e;
-    margin-top: 120px;
+    margin-top: 140px;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.5em;
     font-size: 20px;
 }
 .sub-head h3{
@@ -36,19 +38,18 @@ header.head img{
     letter-spacing: 0.2em;
 }
 .sub-head a{
-    color: rgb(171, 129, 115);
+    color: rgb(110, 110, 173);
     margin-top: 15px;
     font-weight: 900;
     font-size: 13px;
     letter-spacing: 0.2em;
-    text-decoration: none;
 }
 .sub-head a:hover{
-    color: black;
+    color: blue;
     text-decoration: underline;
 }
 hr {
-    border-top: 3px solid #aa8072;
+    border-top: 3px solid gray;
     width: 60%;
     margin-top:70px;
     margin-left: auto;
@@ -57,16 +58,16 @@ hr {
 .submain{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 97px;
-    align-items: center;
-    margin: 30px;
+    grid-gap: 80px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     margin-left: 250px;
 }
 .submain div{
     margin-bottom: -70px;
 }
 .submain h2 {
-    color: #aa8072;
+    color: rgb(110, 110, 173);
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
@@ -75,7 +76,7 @@ hr {
     font-size: 15px;
 }
 .sub-header{
-    color: #aa8072;
+    color: rgb(110, 110, 173);
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 600;
@@ -105,7 +106,7 @@ hr {
 }
 
 .btn {
-    background-color: #553024;
+    background-color: rgb(110, 110, 173);
     color: #fff;
     padding: 15px;
     border-radius: 20px;
@@ -116,5 +117,18 @@ hr {
     text-decoration: none;
 }
 .btn:hover{
-    background-color:#aa8072 ;
+    background-color: blue;
+}
+
+@media only screen and (max-width: 414px) {
+    .submain{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 10px;
+    }
+    .sub-sec{
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 10px;
+    }
 }
